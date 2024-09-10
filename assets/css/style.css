@@ -16,7 +16,7 @@ nav {
 } 
 
 .text-white{
-    color: white;
+    color: hsl(0, 0%, 100%);
 }
 
 .hero{
@@ -28,14 +28,15 @@ nav {
 } 
 
 .title{
-    font-size: 60px; 
+    font-size: 80px; 
 }
 
 .subtitle{
     font-size: 16px;
 } 
 
-.hero-info{
-    width: 50%; 
-    padding-top: 48px;
-}
+/* .hero-info{
+    width: 85%; 
+    padding-top: 48px; 
+    margin: auto;
+} */
