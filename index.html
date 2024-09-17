@@ -1,63 +1,66 @@
-<!-- i am using someone's code -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Vincent Odeifuo-Ahama | OdeifuoMedia</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <nav class="fixed right-0 left-0">
-        <h4 class="text-white">OD4</h4>
-        <div class="nav-items">
-            <a class="text-white" href="#">Home</a>
-            <a class="text-white" href="#">About</a>
-            <a class="text-white" href="#">Services</a>
-            <a class="text-white" href="#">Portfolio</a>
-            <a class="text-white" href="#">Pricing</a>
-            <a class="text-white" href="#">Blog</a>
-            <a class="text-white" href="#">Contact</a>
+    <header>
+        <div class="logo">
+            <!-- Space for your logo -->
+            <img src="./assets/images/asset 16.webp" alt="OdeifuoMedia" a href="index.html"></a>
+            <!-- <h1>OdeifuoMedia</h1> -->
         </div>
-    </nav>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section Slider -->
     <section class="hero">
-        <div class="w-[60%] pl-[10%] pt-[50px]">
-
-            <p>Hi There!</p>
-            <h2 class="title text-white">I am Odeifuo Ahama</h2>
-            <h3 class="title text-white">A Web Developer</h3>
-            <p class="subtitle text-white">Far far away, behind the word mountains, far from the countries Vokalia and
-                Consonantia, there live the
-                blind texts.</p>
-            <button class="bg-[#0779E4] px-[24px] h-[53px] text-white font-bold py-[16px] lg-[10px]">HIRE ME</button>
-            <button class="bg-[#ffffff] px-[24px] h-[53px] text-[#0779E4] font-bold py-[16px]">VIEW PORTFOLIO</button>
-
-        </div>
-    </section>
-    <!-- we are goin to the about section -->
-    <section class="flex flex-row justify-evenly w-[80%] mx-auto">
-        <div class="w-[40%] bg-[url('/assets/images/about.jpg')] bg-cover h-[600px] bg-center"></div>
-        <div class="w-[40%]">
-            <div>
-                <a href="#">ABOUT ME</a>
-                <a href="#">SKILLS</a>
-                <a href="#">EXPERIENCE</a>
+        <div class="slider">
+            <div class="slide" style="background-image: url('./assets/images/asset\ 2.png');">
+                <div class="content">
+                    <h2>Your Dream Website Starts Here</h2>
+                    <p>Building digital experiences that engage and convert.</p>
+                    <div class="cta-buttons">
+                        <a href="#services" class="btn">Our Services</a>
+                        <a href="#contact" class="btn">Contact Us</a>
+                    </div>
+                </div>
             </div>
-            <DIv>
-                <h1 class="text-[40px]">My Story</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae natus facere expedita molestiae
-                    suscipit, repellendus repudiandae.</p> 
-                <h2>Skills</h2> 
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos voluptates rem dolores a, similique, omnis obcaecati in odit ipsa possimus quam, nemo magni. Consectetur iure delectus at rem, ad nulla!</p>
-            </DIv>
+            <div class="slide" style="background-image: url('image2.jpg');">
+                <div class="content">
+                    <h2>Modern & Professional Designs</h2>
+                    <p>Innovative solutions tailored to your brand's needs.</p>
+                    <div class="cta-buttons">
+                        <a href="#services" class="btn">Our Services</a>
+                        <a href="#pricing" class="btn">View Pricing</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('image3.jpg');">
+                <div class="content">
+                    <h2>Let’s Build Something Amazing</h2>
+                    <p>Your journey to digital success begins here.</p>
+                    <div class="cta-buttons">
+                        <a href="#about" class="btn">Learn More</a>
+                        <a href="#contact" class="btn">Get in Touch</a>
+                    </div>
+                </div>
+            </div>
         </div>
-
     </section>
-
 </body>
 
 </html>

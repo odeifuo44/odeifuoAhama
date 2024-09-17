@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: linear-gradient (to right,#0057b3fd, #04a334fd); /* Main blue color for the header */
+    position: fixed; 
+    width: 100%;   
+    height: 100px; /* Used to enable scrolling */
+    background: linear-gradient(55deg, #3b8edbd5 0%, #4447f8 51%, #032492 85%);
+   
+}
+
+.logo h1 {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+} 
+
+.logo{
+    display: flex;
+    height: 100px; 
+    width: 100px;  
+    margin-left: 5rem;
+     
+
+
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 8px 16px;
+    transition: background-color 0.5s ease;
+}
+
+nav ul li a:hover {
+    background-color: #004494; /* Darker shade of blue on hover */
+    border-radius: 5px;
+} 
+
+/* Hero Section */
+.hero {
+    /* position: cover; */
+    width: 50%;
+    height: 100vh;
+    overflow: hidden; 
+    
+}
+
+.slider {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    animation: slideAnimation 15s infinite; 
+    margin-top: 100px;
+}
+
+.slide {
+    position: relative;
+    width: 100%;
+    flex-shrink: 0;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: zoom-out 6s ease-in-out infinite;
+}
+
+@keyframes zoom-in {
+    0% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes slideAnimation {
+    0% {transform: translateX(0%);}
+    33% {transform: translateX(-100%);}
+    /* 66% {transform: translateX(-200%);} */
+    100% {transform: translateX(0%);}
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.content h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.cta-buttons .btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-buttons .btn:hover {
+    background-color: #0056b3;
+}
+ 
