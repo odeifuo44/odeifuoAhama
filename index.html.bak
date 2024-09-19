@@ -15,10 +15,25 @@
     </script-->
     <!-- End WOWSlider.com HEAD section -->
     <!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
-    <link rel="stylesheet" type="text/css" href="engine3/style.css" />
-    <script type="text/javascript" src="engine3/jquery.js"></script>
+    
+
+    <!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
+    <link rel="stylesheet" type="text/css" href="engine0/style.css" />
+    <script type="text/javascript" src="engine0/jquery.js"></script>
     <!-- End WOWSlider.com HEAD section -->
-</head>
+
+	<!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
+	<link rel="stylesheet" type="text/css" href="engine0/style.css" />
+	<!--script type="text/javascript" src="engine0/jquery.js"></script-->
+	<!-- End WOWSlider.com HEAD section -->
+	<!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
+	<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+	<!--script type="text/javascript" src="engine1/jquery.js"></script-->
+	<!-- End WOWSlider.com HEAD section -->
+	<!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
+	<link rel="stylesheet" type="text/css" href="engine0/style.css" />
+	<!--script type="text/javascript" src="engine0/jquery.js"></script-->
+	<!-- End WOWSlider.com HEAD section --></head>
 
 <body>
     <header>
@@ -73,7 +88,7 @@
 
                 <!-- <h3>Hi, I'm Odeifuo</h3> -->
                 <h1> Do <span>Y</span>ou<span> O</span>wn A <br><span>B</span>usiness?</h1>
-                <marquee behavior="scroll" direction="right-to-left">
+                <marquee behavior="scroll" direction="center-to-left">
                     <h3>I can give your brand a solid online presence</h3>
                 </marquee>
                 <a href="#">Talk to Me!</a>
@@ -109,19 +124,33 @@
         <div class="hero-img">
             <img src="./assets/images/asset 2.png" class="my-img" alt="image">
         </div>
+        <div>
 
-        <div class="myName">
-            <h3>I'm Odeifuo</h3>
-            <h1>Web Developer</h1>
+
+            <div class="myName">
+                <h3>I'm Odeifuo:</h3>
+                <h1><span>W</span>eb Developer</h1>
+            </div>
+            <div class="myName">
+                <h1><span>G</span>raphic Designer</h1>
+            </div>
+            <div class="myName">
+                <h1><span>D</span>igital Marketer</h1>
+            </div>
+            <div class="myName">
+                <h1><span>D</span>igital Trainer</h1>
+            </div>
         </div>
     </section>
 
     <section class="skills">
-        <h1> My Skills
-
+        <h1>My Skills
+	
+    
+ 
     </section>
 
 
 </body>
 
-</html>
+</html>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
