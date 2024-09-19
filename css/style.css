@@ -13,27 +13,27 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: linear-gradient (to right,#0057b3fd, #04a334fd); /* Main blue color for the header */
-    position: fixed; 
-    width: 100%;   
-    height: 100px; /* Used to enable scrolling */
-    background: linear-gradient(55deg, #3b8edbd5 0%, #4447f8 51%, #032492 85%);
-   
+    background-color: linear-gradient (to right, #0057b3fd, #04a334fd);
+    /* Main blue color for the header */
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    /* Used to enable scrolling */
+    background: linear-gradient(55deg, #3b8edbd5 0%, #054680 51%, #032492 85%);
+
 }
 
 .logo h1 {
     color: white;
     font-size: 24px;
     font-weight: bold;
-} 
+}
 
-.logo{
+.logo {
     display: flex;
-    height: 100px; 
-    width: 100px;  
+    height: 100px;
+    width: 100px;
     margin-left: 5rem;
-     
-
 
 }
 
@@ -56,92 +56,200 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #004494; /* Darker shade of blue on hover */
+    background-color: #004494;
+    /* Darker shade of blue on hover */
     border-radius: 5px;
-} 
+}
 
 /* Hero Section */
-.hero {
-    /* position: cover; */
-    width: 50%;
-    height: 100vh;
-    overflow: hidden; 
-    
-}
-
-.slider {
-    position: absolute;
-    width: 100%;
-    height: 50%;
-    display: flex;
-    animation: slideAnimation 15s infinite; 
-    margin-top: 100px;
-}
-
-.slide {
+/* .hero {
     position: relative;
     width: 100%;
-    flex-shrink: 0;
     height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    animation: zoom-out 6s ease-in-out infinite;
+    overflow: hidden;
+    background-color: #007bb5;
 }
 
-@keyframes zoom-in {
-    0% {
-        transform: scale(1.2);
-    }
-    100% {
-        transform: scale(1);
-    }
+.carousel {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
-@keyframes slideAnimation {
-    0% {transform: translateX(0%);}
-    33% {transform: translateX(-100%);}
-    /* 66% {transform: translateX(-200%);} */
-    100% {transform: translateX(0%);}
+.carousel-inner {
+    display: flex;
+    width: 300%;
+    height: 100%;
+    animation: scrollCarousel 15s infinite linear;
 }
 
-.content {
+.carousel-item {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 10s ease;
+}
+
+.carousel-item .tagline {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.overlay {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    z-index: 2;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 10px;
+    color: white;
 }
 
-.content h2 {
-    font-size: 36px;
+.overlay h1 {
+    font-size: 48px;
     margin-bottom: 10px;
 }
 
-.content p {
-    font-size: 18px;
-    margin-bottom: 20px;
+.overlay p {
+    font-size: 24px;
 }
 
-.cta-buttons {
-    display: flex;
-    gap: 20px;
+@keyframes scrollCarousel {
+    0% {
+        transform: translateX(0);
+    }
+    33% {
+        transform: translateX(-100%);
+    }
+    66% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
-.cta-buttons .btn {
+.carousel-item.active img {
+    transform: scale(1);
+}
+
+.carousel-item img {
+    transform: scale(1.2);
+} */
+
+.bg-img {
+    height: 100vh;
+    width: 100%;
+    margin-top: 6rem;
+    bottom: 0;
+
+
+
+}
+
+.hero-text {
+    /* display: flex; */
+    margin-top: -25%;
+    margin-left: 45%;
+    font-family: sans-serif;
+    background: white;
+
+}
+
+.hero-text h1 {
+    font-size: 70px;
+    color: #ffffff;
+    .text-focus-in -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+
+}
+
+.hero-text span {
+    color: #bdab09;
+}
+
+.hero-text a {
+    background: #B82F8B;
+    border-radius: 10px;
     text-decoration: none;
-    padding: 10px 20px;
-    background-color: #007bff;
     color: white;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+    display: inline-block;
+    padding: 10px 18px;
+    margin-top: 15px;
 }
 
-.cta-buttons .btn:hover {
-    background-color: #0056b3;
+.hero-text a:hover {
+    background: #bdab09;
+    transition: .5s es;
 }
- 
+
+.hero-text h3 {
+    color: #bdab09;
+}
+
+/* .hero-img {
+    width: 30%;
+    height: 60%;
+    position: absolute;
+    bottom: 0px;
+    left: 100px;
+}  */
+
+.my-img {
+    position: absolute;
+    height: 20% right: 40%;
+    transform: translate(-50%);
+    bottom: 0;
+    transition: left 2s ease;
+    margin-bottom: -55%;
+    margin-left: 25%;
+
+
+
+}
+
+.my-img:hover {
+    left: 55%;
+
+}
+
+
+.about-me { 
+    background: #cbe2f7 ;
+    height: 100vh;
+    /* margin-top: 15%; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 0px; 
+    box-sizing: 10px ;
+
+
+}
+
+.my-story {
+    margin-left: 30%; 
+    margin-top: 30%;
+
+} 
+
+.my-story p {
+    margin-top: 5%;
+}
