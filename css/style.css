@@ -103,7 +103,8 @@ nav ul li a:hover {
 }
 
 .hero-text a:hover {
-    background: #c2bf03;
+    background: #E3D417;
+    color: #054580;
     transition: .5s es;
 }
 
@@ -127,16 +128,19 @@ nav ul li a:hover {
     transition: left 2s ease;
     margin-bottom: -65%;
     margin-left: 25%;
-    background: linear-gradient(#032492, rgb(5, 5, 65)); 
-    
+    background: linear-gradient(#032492, rgb(5, 5, 65));
+
 
 
 }
 
 .my-img:hover {
-    left: 55%; 
-    border-radius: 20px; 
-    
+    left: 55%;
+    border-radius: 20px;
+    border: solid;
+    border-color: #054580;
+    background: white;
+
 
 
 }
@@ -167,20 +171,22 @@ nav ul li a:hover {
     margin-left: 30%;
     height: 10vh;
     text-align: left;
-    padding-top: 1%; 
+    padding-top: 1%;
     border-radius: 20px;
 }
 
 .myName:hover {
     color: #054580;
-    background: white; 
+    background: white;
     transition: 1s ease;
 
 }
 
 .my-story {
     margin-left: 30%;
-    margin-top: 30%; 
+    margin-top: 30%;
+
+
 }
 
 .my-story p {
@@ -189,6 +195,17 @@ nav ul li a:hover {
 
 .my-story h1 {
     color: #054680;
+    background: linear-gradient(#032492, rgb(5, 5, 65));
+    color: white;
+    padding: 10px;
+    width: 40%;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.my-story h1:hover {
+    background: white;
+    color: #03218A
 }
 
 
@@ -226,6 +243,7 @@ nav ul li a:hover {
     /* border-radius: 20px;  */
     text-align: center;
     color: #EDEDED;
+    border-radius: 20px;
 }
 
 .logoScroll {
@@ -244,13 +262,15 @@ nav ul li a:hover {
     height: 80vh;
     width: 100%;
     margin-top: 6rem;
-    bottom: 0;
-   
+    bottom: 0; 
+    background-attachment: fixed;
+
 
 }
 
 .Why-Choose {
-    margin-top: 3rem;
+    margin-top: 3rem; 
+   
 
 }
 
@@ -261,8 +281,9 @@ nav ul li a:hover {
     padding: 10px;
     padding-right: 10px;
     color: white;
-    text-align: center; 
+    text-align: center;
     margin-top: 10%;
+    border-radius: 20px;
 
 }
 
@@ -277,9 +298,9 @@ nav ul li a:hover {
     text-align: center;
     border-radius: 20px;
 
-} 
+}
 
-.tag-txt{ 
+.tag-txt {
     display: block;
     width: 20%;
     margin-top: 10%;
@@ -290,10 +311,10 @@ nav ul li a:hover {
     padding: 20px;
     text-align: center;
     border-radius: 20px;
-} 
+}
 
-.tag-txt:hover{
-    background: linear-gradient(#032492, rgb(5, 5, 65)); 
+.tag-txt:hover {
+    background: linear-gradient(#032492, rgb(5, 5, 65));
     color: white;
 }
 
@@ -305,19 +326,172 @@ nav ul li a:hover {
 
 .tag-img {
     border: solid;
-    background: #054680;
+    background: #2E5991;
     color: white;
-    transition: 1s ease; 
-    border-radius: 20%; 
+    transition: 1s ease;
+    border-radius: 20%;
     margin-left: 15%;
-} 
+}
 
-.tag-img:hover{
-    background: white; 
+.tag-img:hover {
+    background: white;
 
 }
 
-.h1-hover:hover{
+.h1-hover:hover {
     color: #F5D905;
 }
 
+.myServices {
+    margin-left: 16%;
+    background: linear-gradient(#2E5991, rgb(5, 5, 65));
+    width: 20%;
+    padding: 10px;
+    padding-right: 10px;
+    color: white;
+    text-align: center;
+    margin-top: 10%;
+    border-radius: 20px;
+}
+
+.service-txt {
+    display: inline-block;
+    width: 20%;
+    margin-top: 7%;
+    margin-left: 10%;
+    border: solid;
+    background: #0B4C86;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 8%;
+    text-align: center;
+
+}
+
+.service-txt:hover {
+    background: white;
+    color: #03218A;
+
+}
+
+
+.service-sec {
+    margin-top: 20%;
+    /* height: 20%; */
+
+}
+
+
+.service-sec-title {
+    margin-bottom: -50px;
+    color: #03218A;
+    text-align: center;
+    padding-top: 40px;
+
+}
+
+.service-sec-title {
+    color: white;
+}
+
+.service-sec:hover {
+    background: linear-gradient(#032492, rgb(5, 5, 65));
+    height: 30%;
+    text-decoration: white;
+
+}
+
+/* newsletter begins here */ 
+
+.newsletter { 
+
+    .parent {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 14px;
+grid-row-gap: 0px;
+}
+    /* background: linear-gradient(#032492, rgb(5, 5, 65)); */
+    height: 50vh;
+    margin-top: 30px
+}
+
+.subscription-form {
+    margin-left: 35%;
+    margin-top: -10%
+}
+
+.subscription-txt {
+    margin-top: -45%;
+    color: white;
+    padding-top: 50px;
+    margin-left: -10%;
+    font-size: 50px;
+}
+
+.subscription-form input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex-grow: 1;
+    margin-right: 10px;
+    margin-top: 10%;
+    align-content: center;
+    width: 40%;
+
+}
+
+.subscription-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #0917db;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.subscription-form button:hover {
+    background-color: #E3D417;
+}
+
+
+
+.newsletter-bg {
+    width: 100%;
+    height: 70vh;
+    margin-top: 10%;
+}
+
+/* social icons */
+
+.facebook{ 
+    display: inline-flex; 
+    gap: -20px;
+    width: 40px; 
+    /* transition: left 2s ease;  */
+    align-items: center; 
+    margin-left: 90px; 
+    margin-top: 30px; 
+    margin-right: 15%;
+} 
+
+.facebook:hover{
+    transition: left .2s ease;
+} 
+
+.footer h5{ 
+    display: inline-block;
+    color: white; 
+    padding-top: 25px;
+    margin-left: 45%; 
+    
+} 
+
+.social-icons{
+    
+}
