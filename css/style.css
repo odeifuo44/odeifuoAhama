@@ -8,6 +8,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
+
 header {
     display: flex;
     justify-content: space-between;
@@ -19,7 +20,7 @@ header {
     width: 100%;
     height: 100px;
     /* Used to enable scrolling */
-    background: linear-gradient(55deg, #3b8edbd5 0%, #054680 51%, #032492 85%);
+    /* background: linear-gradient(55deg, #3b8edbd5 0%, #054680 51%, #032492 85%); */
 
 }
 
@@ -53,17 +54,19 @@ nav ul li a {
     font-size: 18px;
     padding: 8px 16px;
     transition: background-color 0.5s ease;
+
 }
 
 nav ul li a:hover {
-    background-color: #EDEDED;
+    background: linear-gradient(55deg, #71b4f3d5 15%, #054680 35%, #032492 50%);
     /* Darker shade of blue on hover */
     border-radius: 5px;
-    color: #0B4C86;
+    color: #fff;
+
 }
 
 
-
+/* 
 .bg-img {
     height: 100vh;
     width: 100%;
@@ -72,7 +75,7 @@ nav ul li a:hover {
 }
 
 .hero-text {
-    /* display: flex; */
+  
     margin-top: -35%;
     margin-left: 10%;
     font-family: sans-serif;
@@ -83,7 +86,6 @@ nav ul li a:hover {
 .hero-text h1 {
     font-size: 70px;
     color: #2C5087;
-    .text-focus-in -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
     animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 
 }
@@ -110,28 +112,154 @@ nav ul li a:hover {
 
 .hero-text h3 {
     color: #054580;
-}
+} */
 
-/* .hero-img {
+.hero-img {
     width: 30%;
     height: 60%;
     position: absolute;
     bottom: 0px;
     left: 100px;
-}  */
+    margin-bottom: -40rem;
+    margin-left: 25rem;
+}
+
+
+
+/* New Hero Section */
+
+.hero {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #2c3f55; */
+    /* background-image: url(../assets/images/asset\ 18.png); */
+    background-image: url(../assets/images/bg-img.jpg);
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.left {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    /* flex: 1; */
+    color: white;
+    padding-left: 10rem;
+    margin-top: 15rem;
+}
+
+
+.typing-text {
+    font-size: 3rem;
+    border-right: 2px solid white;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: typing 7s steps(20, end), blink .70s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 14ch;
+    }
+}
+
+@keyframes blink {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: white;
+    }
+}
+
+.right {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    padding-top: 20rem;
+    margin-top: 5rem;
+}
+
+.image-container {
+    position: absolute;
+    margin-top: 7rem;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    animation: fade 9s infinite;
+}
+
+.image-container img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: 0;
+}
+
+.image-container img:nth-child(1) {
+    animation: image-fade 9s infinite;
+}
+
+.image-container img:nth-child(2) {
+    animation: image-fade 9s 3s infinite;
+}
+
+.image-container img:nth-child(3) {
+    animation: image-fade 9s 6s infinite;
+}
+
+@keyframes image-fade {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    33% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
 
 .my-img {
     position: absolute;
-    height: 15% right: 40%;
-    transform: translate(-50%);
+    height: 40vh;
+    width: 400px;
+    border-radius: 30px;
+    /* right: 40%; */
+    /* transform: translate (10%); */
     bottom: 0;
-    transition: left 2s ease;
-    margin-bottom: -65%;
+    /* transition: left 5s ease; */
+    margin-bottom: -55%;
     margin-left: 25%;
-    background: linear-gradient(#032492, rgb(5, 5, 65));
-
-
-
+    /* background: linear-gradient(#032492, rgb(5, 5, 65)); */
 }
 
 .my-img:hover {
@@ -140,16 +268,12 @@ nav ul li a:hover {
     border: solid;
     border-color: #054580;
     background: white;
-
-
-
 }
-
 
 .about-me {
     /* background: #cbe2f7 ; */
     height: 100vh;
-    margin-top: 15%;
+    /* margin-top: 15%; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -179,14 +303,11 @@ nav ul li a:hover {
     color: #054580;
     background: white;
     transition: 1s ease;
-
 }
 
 .my-story {
     margin-left: 30%;
     margin-top: 30%;
-
-
 }
 
 .my-story p {
@@ -208,31 +329,155 @@ nav ul li a:hover {
     color: #03218A
 }
 
-
-.skills {
-    background: linear-gradient(#032492, rgb(5, 5, 65));
-    height: 50vh;
-    margin-top: 30%;
+.skills-section {
+    padding: 50px;
+    text-align: center;
+    margin-top: 5rem;
+    justify-content: center;
 }
 
-.skills-title {
-    margin-left: 15%;
-    padding: 2%;
-    color: white;
+.skills-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
 }
 
-#wowslider-container0 {
-    margin-left: -15%;
-    margin-top: 10%;
+.skills-grid {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));  */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
 }
 
-/* .name-anchor{
-    text-decoration: none;
-} */
-
-.myName a {
-    text-decoration: none;
+.skill-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 200px;
 }
+
+.skill-item h3 {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.circle {
+    width: 120px;
+    height: 120px;
+    background: conic-gradient(#054084 calc(var(--percentage) * 1%), #e0e0e0 calc(var(--percentage) * 1%));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.circle::before {
+    content: attr(data-percentage) '%';
+}
+
+.demography {
+    padding: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 18rem;
+    gap: 40px;
+    /* align-items: center; */
+    background-color: #fff;
+    width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-top: 10rem;
+
+}
+
+.cover-note {
+    background-color: #cfd6f3;
+    width: 100vw;
+    height: 40vh;
+    margin-top: -1.2rem;
+    margin-left: -1.5rem;
+
+
+}
+
+.cover-note h2 {
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+.cover-note p {
+    justify-content: center;
+    padding-bottom: 20px;
+    text-align: center;
+    padding-left: 10rem;
+    padding-right: 10rem;
+
+}
+
+.h-line {
+    height: 2px;
+    width: 50vw;
+    margin-bottom: 10px;
+    margin-left: 20rem;
+}
+
+
+
+.card-header {
+    background-color: #054084;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.card-header h2 {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body ul {
+    list-style-type: none;
+}
+
+.card-body li {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.card-body .label {
+    font-weight: bold;
+    color: #054084;
+    margin-right: 8px;
+}
+
+@media (max-width: 500px) {
+    .card {
+        width: 100%;
+    }
+}
+
 
 .myClients h1 {
     margin-top: 15%;
@@ -248,6 +493,10 @@ nav ul li a:hover {
 
 .logoScroll {
     border: rgb(195, 190, 240);
+    column-gap: 40rem;
+    justify-content: space-between;
+    box-sizing: content-box;
+    /* background-color: rgb(228, 228, 228);  */
 }
 
 
@@ -262,16 +511,12 @@ nav ul li a:hover {
     height: 80vh;
     width: 100%;
     margin-top: 6rem;
-    bottom: 0; 
+    bottom: 0;
     background-attachment: fixed;
-
-
 }
 
 .Why-Choose {
-    margin-top: 3rem; 
-   
-
+    margin-top: 3rem;
 }
 
 .mid-container {
@@ -284,7 +529,6 @@ nav ul li a:hover {
     text-align: center;
     margin-top: 10%;
     border-radius: 20px;
-
 }
 
 .taglines {
@@ -297,6 +541,31 @@ nav ul li a:hover {
     padding: 20px;
     text-align: center;
     border-radius: 20px;
+
+}
+
+/* .details-img { 
+    display: flex inline-flexbox; 
+    width: 20%;
+    margin-top: -45%;
+    margin-left: 15rem;
+    border: solid;
+    background: #ffffff;
+    color: #0B4C86;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+}  */
+
+.details-img2 {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-top: -50rem;
+    border-radius: 10rem;
+
+
+
 
 }
 
@@ -360,7 +629,7 @@ nav ul li a:hover {
     margin-top: 7%;
     margin-left: 10%;
     border: solid;
-    background: #0B4C86;
+    /* background: #0B4C86; */
     color: white;
     padding: 20px;
     text-align: center;
@@ -378,43 +647,67 @@ nav ul li a:hover {
 
 
 .service-sec {
-    margin-top: 20%;
-    /* height: 20%; */
-
-}
-
-
-.service-sec-title {
-    margin-bottom: -50px;
-    color: #03218A;
-    text-align: center;
-    padding-top: 40px;
-
-}
-
-.service-sec-title {
-    color: white;
-}
-
-.service-sec:hover {
+    margin-top: -2rem;
     background: linear-gradient(#032492, rgb(5, 5, 65));
     height: 30%;
     text-decoration: white;
 
 }
 
-/* newsletter begins here */ 
 
-.newsletter { 
+.service-sec-title {
+    margin-bottom: -50px;
+    color: #fff;
+    text-align: center;
+    padding-top: 40px; 
+    text-align: center;
+
+}
+
+/* .service-sec-title {
+    color: white;
+}  */
+
+.projects{
+    text-align: center;
+    color: #03218A; 
+    margin-top: 3rem;
+} 
+
+.proj-img{
+    display: flex; 
+    width: 20vw;
+    height: 45vh;  
+    gap: 20px;
+    justify-content: center; 
+    padding: 5rem;
+    padding-top: 2rem; 
+    padding-left: 15rem;
+    /* margin: 2rem;   */
+    margin-left: 27rem;
+
+   
+}
+
+/* .service-sec:hover {
+    background: linear-gradient(#032492, rgb(5, 5, 65));
+    height: 30%;
+    text-decoration: white;
+
+} */
+
+/* newsletter begins here */
+
+.newsletter {
 
     background: linear-gradient(#032492, rgb(5, 5, 65));
     height: 50vh;
-    margin-top: 50%`
+    margin-top: 50%;
 }
 
 .subscription-form {
     margin-left: 35%;
-    margin-top: -10%
+    margin-top: -10%;
 }
 
 .subscription-txt {
@@ -435,7 +728,6 @@ nav ul li a:hover {
     margin-top: 10%;
     align-content: center;
     width: 40%;
-
 }
 
 .subscription-form button {
@@ -446,7 +738,41 @@ nav ul li a:hover {
     color: white;
     border-radius: 4px;
     cursor: pointer;
+} 
+
+.talk-button {
+    background-color: #3498db;
+    color: white; 
+    margin-top: 1rem;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
+
+.talk-button:hover {
+    background-color: #E3D417;
+}
+/* 
+.subscription-form-button1 { 
+    display: flex;
+    padding: 0.5rem 3rem;
+    font-size: 16px;
+    border: none;
+    width: 10rem;
+    background-color: #0917db;
+    color: #ffffff; 
+    margin-top: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+} */
+
+/* .subscription-form-button1:hover {
+    background-color: #E3D417;
+} */
 
 .subscription-form button:hover {
     background-color: #E3D417;
@@ -462,29 +788,25 @@ nav ul li a:hover {
 
 /* social icons */
 
-.facebook{ 
-    display: inline-flex; 
+.social-icons {
+    display: inline-flex;
     gap: -20px;
-    width: 40px; 
+    width: 10px;
     /* transition: left 2s ease;  */
-    align-items: center; 
-    margin-left: 90px; 
-    margin-top: 30px; 
-    margin-right: 15%;
-} 
+    align-items: center;
+    margin-left: 90px;
+    margin-top: 30px;
+    /* margin-right: 15%; */
+}
 
-.facebook:hover{
+.facebook:hover {
     transition: left .2s ease;
-} 
+}
 
-.footer h5{ 
+.footer h5 {
     display: inline-block;
-    color: white; 
+    color: white;
     padding-top: 25px;
-    margin-left: 45%; 
-    
-} 
+    margin-left: 45%;
 
-.social-icons{
-    
 }
