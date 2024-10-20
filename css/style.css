@@ -445,7 +445,15 @@ nav ul li a:hover {
     /* margin-left: 1rem; */
 }
 
+.other-works{
+   margin-left: 490px;
+   margin-top: -2rem;
 
+}
+.other-works a{
+    text-decoration: none;
+
+}
 
 
 .card-header {
