@@ -41,7 +41,8 @@ header {
 nav ul {
     list-style-type: none;
     display: flex;
-    gap: 20px;
+    gap: 20px; 
+    
 }
 
 nav ul li {
