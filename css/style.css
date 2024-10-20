@@ -163,7 +163,7 @@ nav ul li a:hover {
     white-space: nowrap;
     overflow: hidden;
     width: 0;
-    animation: typing 7s steps(20, end), blink .70s step-end infinite;
+    animation: typing 7s steps(20, end), blink .70s step-start infinite;
 }
 
 @keyframes typing {
@@ -437,6 +437,14 @@ nav ul li a:hover {
     margin-left: 20rem;
 }
 
+.h-line2 {
+    height: 2px;
+    width: 10vw;
+    margin-bottom: 5px;
+    /* margin-left: 1rem; */
+}
+
+
 
 
 .card-header {
@@ -572,7 +580,7 @@ nav ul li a:hover {
 .tag-txt {
     display: block;
     width: 20%;
-    margin-top: 10%;
+    margin-top: 1rem;
     margin-left: 65%;
     border: solid;
     background: #ffffff;
@@ -599,12 +607,16 @@ nav ul li a:hover {
     color: white;
     transition: 1s ease;
     border-radius: 20%;
-    margin-left: 15%;
+    margin-left: 15%; 
+    margin-top: -8rem;
 }
 
 .tag-img:hover {
     background: white;
 
+} 
+.why-me-section{
+    /* margin-top: 20rem; */
 }
 
 .h1-hover:hover {
@@ -659,7 +671,7 @@ nav ul li a:hover {
     margin-bottom: -50px;
     color: #fff;
     text-align: center;
-    padding-top: 40px; 
+    padding-top: 40px;
     text-align: center;
 
 }
@@ -668,26 +680,35 @@ nav ul li a:hover {
     color: white;
 }  */
 
-.projects{
+.projects {
     text-align: center;
-    color: #03218A; 
+    color: #03218A;
     margin-top: 3rem;
-} 
+    justify-content: center;
+    margin-left: 20rem;
+}
 
-.proj-img{
-    display: flex; 
-    width: 20vw;
-    height: 45vh;  
+.projects h1 {
+    /* text-align: center; */
+    color: #03218A;
+    margin-top: 3rem;
+    justify-content: center;
+    padding-right: 18rem;
+
+}
+
+.proj-img-container {
+    display: flex;
+    width: 30vw;
+    height: 45vh;
     gap: 20px;
-    justify-content: center; 
+    justify-content: center;
     padding: 5rem;
-    padding-top: 2rem; 
-    background-color: #999;
+    padding-top: 2rem;
     padding-left: 15rem;
-    margin-left: 27rem;
+    margin-left: 5rem;
 
-    margin: 2rem;  
-   
+
 }
 
 .projectImage {
@@ -719,8 +740,9 @@ nav ul li a:hover {
     margin-top: -45%;
     color: white;
     padding-top: 50px;
-    margin-left: -10%;
+    margin-left: 3rem;
     font-size: 50px;
+ 
 }
 
 .subscription-form input[type="email"] {
@@ -743,11 +765,11 @@ nav ul li a:hover {
     color: white;
     border-radius: 4px;
     cursor: pointer;
-} 
+}
 
 .talk-button {
     background-color: #3498db;
-    color: white; 
+    color: white;
     margin-top: 1rem;
     font-size: 20px;
     padding: 10px 20px;
@@ -760,6 +782,7 @@ nav ul li a:hover {
 .talk-button:hover {
     background-color: #E3D417;
 }
+
 /* 
 .subscription-form-button1 { 
     display: flex;
@@ -799,29 +822,32 @@ nav ul li a:hover {
     width: 100vw;
     /* transition: left 2s ease;  */
     align-items: center;
-    /* margin-left: 90px; */
-    margin-top: 30px; 
+    padding-right: 13rem;
+    margin-top: 30px;
     background: rgb(11, 2, 48);
-    /* margin-right: 15%; */
+    justify-content: center;
+    /* margin-right: 15rem; */
 }
-.social-icons h5{
-   padding: 10px; 
-   color: white; 
-   text-align: center;  
-   margin-left: 8rem;
-   
-  
+
+.social-icons h5 {
+    padding: 10px;
+    color: white;
+    text-align: center;
+    margin-left: 8rem;
+
+
 }
- 
-.facebook{
-    width: 20px; 
+
+.facebook {
+    width: 20px;
     padding-left: 5px;
 
-   
+
 }
+
 .facebook:hover {
-    transition: left .2s ease; 
-    
+    transition: left .2s ease;
+
 }
 
 /* .footer h5 {
