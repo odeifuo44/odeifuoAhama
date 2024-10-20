@@ -58,7 +58,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background: linear-gradient(55deg, #71b4f3d5 15%, #054680 35%, #032492 50%);
+    background:  #4485cf;
     /* Darker shade of blue on hover */
     border-radius: 5px;
     color: #fff;
@@ -163,30 +163,30 @@ nav ul li a:hover {
     white-space: nowrap;
     overflow: hidden;
     width: 0;
-    animation: typing 7s steps(20, end), blink .70s step-start infinite;
-}
+    animation: typing 7s steps(20, end) infinite, blink 0.7s step-start infinite;
+  }
 
-@keyframes typing {
-    from {
-        width: 0;
+  @keyframes typing {
+    0% {
+      width: 0;
     }
-
-    to {
-        width: 14ch;
+    50% {
+      width: 14ch; /* Adjust to match the length of your text */
     }
-}
+    100% {
+      width: 0; /* Retract to restart the typing */
+    }
+  }
 
-@keyframes blink {
-
+  @keyframes blink {
     from,
     to {
-        border-color: transparent;
+      border-color: transparent;
     }
-
     50% {
-        border-color: white;
+      border-color: white;
     }
-}
+  }
 
 .right {
     flex: 1;
